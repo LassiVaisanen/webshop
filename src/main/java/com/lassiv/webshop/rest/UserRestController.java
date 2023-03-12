@@ -101,7 +101,7 @@ public class UserRestController {
 
     }
 
-    @GetMapping("/user/{id}/orders/{orderid}")
+    @GetMapping("/user/{userId}/orders/{orderId}")
     public ResponseEntity<Order> getUserOrder(@PathVariable int userId, @PathVariable int orderId)
     {
         User u = uServ.findUser(userId);

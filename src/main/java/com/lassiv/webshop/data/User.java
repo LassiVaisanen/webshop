@@ -41,9 +41,9 @@ public class User {
 
     public Order getOrder(int orderId)
     {
-        for(int i = 0; i < orders.size(); i++)
+        for(int i = orders.size()-1; i >= 0; i--)
         {
-            if(orderId == orders.get(i).getId())
+            if(orderId == i)
             {
                 return orders.get(i);
             }

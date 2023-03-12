@@ -34,6 +34,10 @@ public class UserService {
         Order p = new Order();
         Order q = new Order();
 
+        o.setId(0);
+        o.setId(1);
+        o.setId(2);
+
         o.addItem(f, 3);
         o.addItem(a, 2);
 

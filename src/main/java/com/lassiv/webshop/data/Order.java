@@ -10,10 +10,18 @@ public class Order {
     private List<OrderItem> items = new ArrayList<>();
 
 
+    public Order(int id, Date date) {
+        this.id = id;
+        this.date = date;
+    }
+
+    public Order() {
+    }
+
     public List<OrderItem> getOrder()
     {
         return items;
-    }
+    }    
 
     public int getId() {
         return this.id;
